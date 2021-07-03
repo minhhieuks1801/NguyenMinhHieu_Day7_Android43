@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">NguyenMinhHieu_Day7_Android43</string>
+    -------Title-------
+    <string name="title">Create New Note</string>
+    <string name="save">SAVE</string>
+
+    -------EditText------
+    <string name="Title">Title</string>
+    <string name="Description">Description</string>
+
+    -------Time-------
+    <string name="Remind">Remind me at:</string>
+    <string name="gio">12:20</string>
+    <string name="ngay">18/1/2000</string>
+
+    ------Type-------
+    <string name="type">Type:</string>
+    <string name="work">Work</string>
+    <string name="friend">Friend</string>
+    <string name="family">Family</string>
+
+    ------Tags------
+    <string name="Tags">Tags:</string>
+    <string name="mon">Suning, NAVI, G2 Esport, SBTC Esport, GAM Esport</string>
+    <string name="weeks">Weeks:</string>
+    <string name="thu">Mon, Thu, Sat</string>
+
+    ------button-----
+    <string name="Tune">Tune</string>
+    <string name="FromFile">From file</string>
+    <string name="FromDefaults">From defaults</string>
+</resources>
+
+

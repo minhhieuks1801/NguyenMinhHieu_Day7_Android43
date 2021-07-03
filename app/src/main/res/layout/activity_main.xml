@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!--Guide-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide10n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide40n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide50n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide70n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide90n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide95d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide5d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+    <!--Fragment-->
+        <FrameLayout
+            android:id="@+id/fragmentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <!--Layout-->
+
+        <LinearLayout
+            android:background="@drawable/custom_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guide10n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="@string/title"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="@string/save"
+                android:layout_weight="1.9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btMenu"
+                android:layout_margin="10dp"
+                android:background="@drawable/vien_menubt"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="@id/guide95d"
+            app:layout_constraintStart_toStartOf="@id/guide5d"
+            app:layout_constraintTop_toTopOf="@id/guide10n"
+            app:layout_constraintBottom_toBottomOf="@id/guide40n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <EditText
+                android:textColor="#6E6B6B"
+                android:gravity="top"
+                android:hint="@string/Title"
+                android:background="@drawable/vien_edittext"
+                android:layout_marginTop="30dp"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:textColor="#6E6B6B"
+                android:gravity="top"
+                android:hint="@string/Description"
+                android:background="@drawable/vien_edittext"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textColor="#494545"
+                android:text="@string/Remind"
+                android:layout_weight="4"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="@id/guide95d"
+            app:layout_constraintStart_toStartOf="@id/guide5d"
+            app:layout_constraintTop_toTopOf="@id/guide40n"
+            app:layout_constraintBottom_toBottomOf="@id/guide50n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGio"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="@string/gio"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="@string/ngay"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="@id/guide95d"
+            app:layout_constraintStart_toStartOf="@id/guide5d"
+            app:layout_constraintTop_toTopOf="@id/guide50n"
+            app:layout_constraintBottom_toBottomOf="@id/guide70n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|left">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:text="@string/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:text="@string/Tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvMon"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:text="@string/weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvThu"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="@id/guide95d"
+            app:layout_constraintStart_toStartOf="@id/guide5d"
+            app:layout_constraintTop_toTopOf="@id/guide70n"
+            app:layout_constraintBottom_toBottomOf="@id/guide90n"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/btnTune"
+                android:background="@drawable/vien_edittext"
+                android:textColor="#474444"
+                android:text="@string/Tune"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
